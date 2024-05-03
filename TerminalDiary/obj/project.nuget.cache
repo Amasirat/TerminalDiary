@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "j0KoZW3VvWoagJaqLVa95jAwd3/JdDf9zP3xDbLxKVu3is65fs0M8d5/8rHbsVqotnnZnmdi5/vUpuXjoh+DZg==",
+  "success": true,
+  "projectFilePath": "/home/amasirat/projects/TerminalDiary/TerminalDiary/TerminalDiary.csproj",
+  "expectedPackageFiles": [
+    "/home/amasirat/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.4/microsoft.aspnetcore.app.ref.8.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}
