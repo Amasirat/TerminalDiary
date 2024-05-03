@@ -1,2 +1,10 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿namespace Program
+{
+    class Parser
+    {
+        public static void Main()
+        {
+
+        }
+    }
+}

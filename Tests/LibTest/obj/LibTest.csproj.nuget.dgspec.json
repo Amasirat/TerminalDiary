@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "/home/amasirat/projects/TerminalDiary/TerminalDiary/TerminalDiary.csproj": {}
+    "/home/amasirat/projects/TerminalDiary/Tests/LibTest/LibTest.csproj": {}
   },
   "projects": {
     "/home/amasirat/projects/TerminalDiary/Lib/Lib.csproj": {
@@ -63,14 +63,14 @@
         }
       }
     },
-    "/home/amasirat/projects/TerminalDiary/TerminalDiary/TerminalDiary.csproj": {
+    "/home/amasirat/projects/TerminalDiary/Tests/LibTest/LibTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/amasirat/projects/TerminalDiary/TerminalDiary/TerminalDiary.csproj",
-        "projectName": "TerminalDiary",
-        "projectPath": "/home/amasirat/projects/TerminalDiary/TerminalDiary/TerminalDiary.csproj",
+        "projectUniqueName": "/home/amasirat/projects/TerminalDiary/Tests/LibTest/LibTest.csproj",
+        "projectName": "LibTest",
+        "projectPath": "/home/amasirat/projects/TerminalDiary/Tests/LibTest/LibTest.csproj",
         "packagesPath": "/home/amasirat/.nuget/packages/",
-        "outputPath": "/home/amasirat/projects/TerminalDiary/TerminalDiary/obj/",
+        "outputPath": "/home/amasirat/projects/TerminalDiary/Tests/LibTest/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/amasirat/.nuget/NuGet/NuGet.Config"
@@ -100,6 +100,24 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[3.0.4, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[3.0.4, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.6.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

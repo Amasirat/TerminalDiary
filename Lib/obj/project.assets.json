@@ -1,30 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {
-      "Lib/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "compile": {
-          "bin/placeholder/Lib.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Lib.dll": {}
-        }
-      }
-    }
+    "net8.0": {}
   },
-  "libraries": {
-    "Lib/1.0.0": {
-      "type": "project",
-      "path": "../Lib/Lib.csproj",
-      "msbuildProject": "../Lib/Lib.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    "net8.0": [
-      "Lib >= 1.0.0"
-    ]
+    "net8.0": []
   },
   "packageFolders": {
     "/home/amasirat/.nuget/packages/": {}
@@ -32,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/amasirat/projects/TerminalDiary/TerminalDiary/TerminalDiary.csproj",
-      "projectName": "TerminalDiary",
-      "projectPath": "/home/amasirat/projects/TerminalDiary/TerminalDiary/TerminalDiary.csproj",
+      "projectUniqueName": "/home/amasirat/projects/TerminalDiary/Lib/Lib.csproj",
+      "projectName": "Lib",
+      "projectPath": "/home/amasirat/projects/TerminalDiary/Lib/Lib.csproj",
       "packagesPath": "/home/amasirat/.nuget/packages/",
-      "outputPath": "/home/amasirat/projects/TerminalDiary/TerminalDiary/obj/",
+      "outputPath": "/home/amasirat/projects/TerminalDiary/Lib/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/amasirat/.nuget/NuGet/NuGet.Config"
@@ -50,11 +31,7 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {
-            "/home/amasirat/projects/TerminalDiary/Lib/Lib.csproj": {
-              "projectPath": "/home/amasirat/projects/TerminalDiary/Lib/Lib.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
