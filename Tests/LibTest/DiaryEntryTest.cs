@@ -1,7 +1,7 @@
 namespace LibTest;
 
 [TestClass]
-public class UnitTest1
+public class DiaryEntryTest
 {
     [TestMethod]
     public void TestMethod1()

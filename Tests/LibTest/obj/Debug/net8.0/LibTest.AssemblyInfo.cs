@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LibTest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+78b4ebceba41bad94588d27a79d8075090b79249")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cb453b207da04a960837b751506351e8393bb852")]
 [assembly: System.Reflection.AssemblyProductAttribute("LibTest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LibTest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

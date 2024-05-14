@@ -1,6 +1,7 @@
-﻿namespace Program
+﻿using Lib;
+namespace App
 {
-    class Parser
+    class App
     {
         public static void Main()
         {
