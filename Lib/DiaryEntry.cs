@@ -1,23 +1,22 @@
-﻿using System.DateTime;
-namespace Lib;
+﻿namespace Lib;
 
 public class DiaryEntry
 {
-    public DiaryEntry(string title, string text, DateTime date, UploadNotifier UploaderMethod)
+//Master ctor
+    public DiaryEntry(string title, string text, DateTime date)
     {
         Title = title;
         Text = text;
         Date = date;
-        ReadyToUpload = UploaderMethod;
     }
 
-    public deligate void UploadNotifier(string text);
+    public DiaryEntry(DateTime date, string text) : this(date.ToString(), text, date)
+    {
+    }
 
     public string Text {get; set;}
 
     public string Title {get; set;}
 
     public DateTime Date {get; set;}
-
-    public event UploadNotifier ReadyToUpload;
 }

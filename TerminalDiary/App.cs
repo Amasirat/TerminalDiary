@@ -7,5 +7,8 @@ namespace App
         {
 
         }
+
+
+        private Diary diary;
     }
 }
