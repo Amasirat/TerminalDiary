@@ -7,38 +7,46 @@ public class Diary
     public Diary(string name, List<DiaryEntry> usrEntries)
     {
         Name = name;
-        entries = usrEntries;
+        Entries = usrEntries;
     }
 
-    public Diary(string name) : this(name, null)
+    public Diary(string name = "NoName") : this(name, null)
     {}
 
     public void AddEntry(DiaryEntry entry)
     {
-        if(entries == null)
+        if(Entries == null)
         {
-            entries = new List<DiaryEntry>();
+            Entries = new List<DiaryEntry>();
         }
 
-        entries.Add(entry);
+        Entries.Add(entry);
     }
 
     public void RemoveEntry(DiaryEntry entry)
     {
-        if(entries == null)
+        if(Entries == null)
             return;
-        entries.Remove(entry);
+        Entries.Remove(entry);
     }
 
     public bool ContainsEntry(DiaryEntry entry)
     {
-        return entries.Contains(entry);
+        return Entries.Contains(entry);
+    }
+
+    public List<DiaryEntry> GetEntries()
+    {
+        return 
     }
 
     public string Name {get; set;}
     public event UploadEventHandler ReadyToUpload;
     public event DisplayEventHandler ReadyToDisplay;
-    private List<DiaryEntry> entries;
-    private delegate void UploadEventHandler(DiaryEntry entry);
-    private delegate void DisplayEventHandler(DiaryEntry entry);
+    public List<DiaryEntry> Entries 
+    {
+        get { return Entries; }
+    }
+    private delegate void UploadEventHandler(Diary diary);
+    private delegate void DisplayEventHandler(Diary diary);
 }
