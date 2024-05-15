@@ -30,13 +30,14 @@ public class DiaryTest
     {
         Assert.IsTrue(testDiary.ContainsEntry(testEntries[2]), "Expected to find entry in testDiary but did not");
     }
+
     public static List<DiaryEntry> testEntries = new List<DiaryEntry> {
         new DiaryEntry(new DateTime(2012,2,1), "1"),
         new DiaryEntry(new DateTime(2012,1,1), "2"),
         new DiaryEntry(new DateTime(2012,1,1), "3"),
         new DiaryEntry(new DateTime(2012,1,1), "4"),
         new DiaryEntry(new DateTime(2012,1,1), "5")
-};
+    };
 
     public static Diary testDiary = new Diary("test", testEntries);
 }

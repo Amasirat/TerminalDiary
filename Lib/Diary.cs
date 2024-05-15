@@ -35,20 +35,17 @@ public class Diary
         return Entries.Contains(entry);
     }
 
-    public List<DiaryEntry> GetEntries()
-    {
-        return 
-    }
-
     public string Name {get; set;}
-    // events to communicate with outside classes
-    public event UploadEventHandler ReadyToUpload;
-    public event DisplayEventHandler ReadyToDisplay;
 
     public List<DiaryEntry> Entries 
     {
         get { return Entries; }
     }
+
+    // events to communicate with outside classes
+    public event UploadEventHandler ReadyToUpload;
+    public event DisplayEventHandler ReadyToDisplay;
+
     private delegate void UploadEventHandler(Diary diary);//Used to hook up a database uploader of some kind
     private delegate void DisplayEventHandler(Diary diary);//Used to hook up to the console
 }
