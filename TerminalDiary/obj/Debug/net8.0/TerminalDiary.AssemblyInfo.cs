@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TerminalDiary")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3154e907e62edc0c2452be507ddaed2c36b7e0f2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2792a7f0e6591fba1fb5b2931857ad51e1afa5e1")]
 [assembly: System.Reflection.AssemblyProductAttribute("TerminalDiary")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TerminalDiary")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
