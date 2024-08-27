@@ -12,7 +12,7 @@ public class DiaryTest
 
         testDiary.AddEntry(entry);
 
-        Assert.IsTrue(testDiary.ContainsEntry(entry), "Expected to find entry in testDiary");
+        Assert.IsTrue(testDiary.Entries.Contains(entry), "Expected to find entry in testDiary");
     }
 
     [TestMethod]
@@ -22,13 +22,13 @@ public class DiaryTest
 
         testDiary.RemoveEntry(entry);
 
-        Assert.IsFalse(testDiary.ContainsEntry(entry), "Expected to not find entry in testDiary");
+        Assert.IsFalse(testDiary.Entries.Contains(entry), "Expected to not find entry in testDiary");
     }
 
     [TestMethod]
     public void TestContainsEntry()
     {
-        Assert.IsTrue(testDiary.ContainsEntry(testEntries[2]), "Expected to find entry in testDiary but did not");
+        Assert.IsTrue(testDiary.Entries.Contains(testEntries[2]), "Expected to find entry in testDiary but did not");
     }
 
     public static List<DiaryEntry> testEntries = new List<DiaryEntry> {

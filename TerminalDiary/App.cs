@@ -1,14 +1,10 @@
-﻿using Lib;
-namespace App
-{
-    class App
+﻿namespace TerminalDiary;
+using Lib;
+    static class App
     {
         public static void Main()
         {
-
         }
 
-
-        private Diary diary;
+        private static Diary? _diary;
     }
-}

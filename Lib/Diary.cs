@@ -29,18 +29,13 @@ public class Diary
             Entries.Remove(entry);
     }
 
-    public bool ContainsEntry(DiaryEntry entry)
-    {
-        return Entries.Contains(entry);
-    }
-
     public string Name {get; set;}
 
     public List<DiaryEntry> Entries
     { get; set; }
     
     //Used to hook up a database uploader of some kind
-    public event Action<Diary> ReadyToUpload;
+    public event Action<Diary> UploadHandler;
     //Used to hook up to the console
-    public event Action<Diary> ReadyToDisplay;
+    public event Action<Diary> DisplayHandler;
 }

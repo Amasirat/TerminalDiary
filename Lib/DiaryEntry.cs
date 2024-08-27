@@ -2,7 +2,7 @@
 
 public class DiaryEntry
 {
-//Master ctor
+    // Master ctor
     public DiaryEntry(string title, string text, DateTime date)
     {
         Title = title;
@@ -15,8 +15,6 @@ public class DiaryEntry
     }
 
     public string Text {get; set;}
-
     public string Title {get; set;}
-
     public DateTime Date {get; set;}
 }
