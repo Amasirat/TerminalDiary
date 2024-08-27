@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TerminalDiary
-build_property.ProjectDir = /home/amasirat/projects/TerminalDiary/TerminalDiary/
+build_property.ProjectDir = /home/amasirat/Projects/TerminalDiary/TerminalDiary/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

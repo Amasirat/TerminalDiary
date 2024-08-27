@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Hwdbuptc04DdanTaSAPTygna1H18wvSE4tqMO28merUkKxNDyoYXrEPQco1S4j1k0mZVRPm/c0dLeOiM7eVMqQ==",
+  "dgSpecHash": "MJVEjFhHg4M=",
   "success": true,
-  "projectFilePath": "/home/amasirat/projects/TerminalDiary/Lib/Lib.csproj",
+  "projectFilePath": "/home/amasirat/Projects/TerminalDiary/Lib/Lib.csproj",
   "expectedPackageFiles": [
-    "/home/amasirat/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.4/microsoft.aspnetcore.app.ref.8.0.4.nupkg.sha512"
+    "/home/amasirat/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.7/microsoft.aspnetcore.app.ref.8.0.7.nupkg.sha512"
   ],
   "logs": []
 }

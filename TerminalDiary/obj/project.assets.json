@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/amasirat/projects/TerminalDiary/TerminalDiary/TerminalDiary.csproj",
+      "projectUniqueName": "/home/amasirat/Projects/TerminalDiary/TerminalDiary/TerminalDiary.csproj",
       "projectName": "TerminalDiary",
-      "projectPath": "/home/amasirat/projects/TerminalDiary/TerminalDiary/TerminalDiary.csproj",
+      "projectPath": "/home/amasirat/Projects/TerminalDiary/TerminalDiary/TerminalDiary.csproj",
       "packagesPath": "/home/amasirat/.nuget/packages/",
-      "outputPath": "/home/amasirat/projects/TerminalDiary/TerminalDiary/obj/",
+      "outputPath": "/home/amasirat/Projects/TerminalDiary/TerminalDiary/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/amasirat/.nuget/NuGet/NuGet.Config"
@@ -51,8 +51,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/home/amasirat/projects/TerminalDiary/Lib/Lib.csproj": {
-              "projectPath": "/home/amasirat/projects/TerminalDiary/Lib/Lib.csproj"
+            "/home/amasirat/Projects/TerminalDiary/Lib/Lib.csproj": {
+              "projectPath": "/home/amasirat/Projects/TerminalDiary/Lib/Lib.csproj"
             }
           }
         }
@@ -80,7 +80,7 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[8.0.4, 8.0.4]"
+            "version": "[8.0.7, 8.0.7]"
           }
         ],
         "frameworkReferences": {
@@ -88,7 +88,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.104/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.107/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

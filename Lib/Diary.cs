@@ -25,9 +25,8 @@ public class Diary
 
     public void RemoveEntry(DiaryEntry entry)
     {
-        if(Entries == null)
-            return;
-        Entries.Remove(entry);
+        if(Entries != null) 
+            Entries.Remove(entry);
     }
 
     public bool ContainsEntry(DiaryEntry entry)
@@ -37,15 +36,11 @@ public class Diary
 
     public string Name {get; set;}
 
-    public List<DiaryEntry> Entries 
-    {
-        get { return Entries; }
-    }
-
-    // events to communicate with outside classes
-    public event UploadEventHandler ReadyToUpload;
-    public event DisplayEventHandler ReadyToDisplay;
-
-    private delegate void UploadEventHandler(Diary diary);//Used to hook up a database uploader of some kind
-    private delegate void DisplayEventHandler(Diary diary);//Used to hook up to the console
+    public List<DiaryEntry> Entries
+    { get; set; }
+    
+    //Used to hook up a database uploader of some kind
+    public event Action<Diary> ReadyToUpload;
+    //Used to hook up to the console
+    public event Action<Diary> ReadyToDisplay;
 }
