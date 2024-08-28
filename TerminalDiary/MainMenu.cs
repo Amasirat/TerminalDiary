@@ -2,31 +2,19 @@ namespace TerminalDiary;
 
 public class MainMenu : Menu
 {
-    // Primary Ctor
-    public MainMenu(Dictionary<int, string>? select)
+    public MainMenu()
     {
-        PopulateSelection(select);
-    }
-    // No Argument Ctor
-    public MainMenu() : this(null)
-    {
+        PopulateSelection();
     }
     // Used to fill selections field in a polymorphic fashion
-    public override void PopulateSelection(Dictionary<int, string>? select)
+    public override void PopulateSelection()
     {
-        if (select == null)
+        selections = new Dictionary<int, string>
         {
-            selections = new Dictionary<int, string>
-            {
-                {1, "Diaries"},
-                {2, "Settings"},
-                {3, "Exit"},
-            };
-        }
-        else
-        {
-            selections = new Dictionary<int, string>(select);
-        }
+            { 1, "Diaries" },
+            { 2, "Settings" },
+            { 3, "Exit" },
+        };
     }
     public override void DisplaySelections()
     {
@@ -37,6 +25,23 @@ public class MainMenu : Menu
 
     public override void HandleUserInput(int input)
     {
-        throw new NotImplementedException();
+        switch (input)
+        {
+            case 1:
+            {
+                break;
+            }
+            case 2:
+            {
+                break;
+            }
+            case 3:
+            {
+                break;
+            }
+            default:
+                Console.WriteLine("Invalid Input. Try Again.");
+                break;
+        }
     }
 }

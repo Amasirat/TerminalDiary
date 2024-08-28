@@ -4,7 +4,18 @@ using Lib;
     {
         public static void Main()
         {
+            try
+            {
+                mainMenu = new MainMenu();
+                mainMenu.DisplaySelections();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
         }
 
-        private static Diary? _diary;
+        private static List<Diary>? _diaries;
+        private static MainMenu mainMenu;
     }

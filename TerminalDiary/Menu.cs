@@ -3,7 +3,7 @@ namespace TerminalDiary;
 public abstract class Menu
 {
     // Used for dictating what selections a particular child of Menu should contain in a polymorphic fashion
-    public abstract void PopulateSelection(Dictionary<int, string> select);
+    public abstract void PopulateSelection();
     // Used to display selections on console
     public virtual void DisplaySelections()
     {
@@ -15,6 +15,7 @@ public abstract class Menu
         {
             Console.WriteLine($"{selection.Key}.{selection.Value}");
         }
+        HandleUserInput(int.Parse(Console.ReadLine()));
     }
     // Used to handle user selection and do appropriate action given input
     public abstract void HandleUserInput(int input);

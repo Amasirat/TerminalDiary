@@ -27,6 +27,8 @@ public class Diary
     {
         if(Entries != null) 
             Entries.Remove(entry);
+        
+        DisplayHandler(this);
     }
 
     public string Name {get; set;}
