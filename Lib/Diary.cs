@@ -27,17 +27,7 @@ public class Diary
     {
         if(Entries != null) 
             Entries.Remove(entry);
-        
-        DisplayHandler(this);
     }
-
     public string Name {get; set;}
-
-    public List<DiaryEntry> Entries
-    { get; set; }
-    
-    //Used to hook up a database uploader of some kind
-    public event Action<Diary> UploadHandler;
-    //Used to hook up to the console
-    public event Action<Diary> DisplayHandler;
+    public List<DiaryEntry> Entries { get; set; }
 }

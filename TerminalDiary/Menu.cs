@@ -15,6 +15,7 @@ public abstract class Menu
         {
             Console.WriteLine($"{selection.Key}.{selection.Value}");
         }
+
         HandleUserInput(int.Parse(Console.ReadLine()));
     }
     // Used to handle user selection and do appropriate action given input

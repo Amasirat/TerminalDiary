@@ -6,7 +6,8 @@ using Lib;
         {
             try
             {
-                mainMenu = new MainMenu();
+                mainMenu = new MainMenu(
+                );
                 mainMenu.DisplaySelections();
             }
             catch (Exception e)
@@ -16,6 +17,6 @@ using Lib;
             }
         }
 
-        private static List<Diary>? _diaries;
+        private static List<Diary>? diaries;
         private static MainMenu mainMenu;
     }

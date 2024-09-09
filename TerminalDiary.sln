@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{7CF89DE3
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibTest", "Tests\LibTest\LibTest.csproj", "{DED55323-AAA9-4A78-9907-7D02F66B1CCB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TerminalDiaryTest", "Tests\TerminalDiaryTest\TerminalDiaryTest.csproj", "{AEEE2343-6198-48A0-AC92-818A5BFC4AC4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,8 +34,13 @@ Global
 		{DED55323-AAA9-4A78-9907-7D02F66B1CCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DED55323-AAA9-4A78-9907-7D02F66B1CCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DED55323-AAA9-4A78-9907-7D02F66B1CCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEEE2343-6198-48A0-AC92-818A5BFC4AC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEEE2343-6198-48A0-AC92-818A5BFC4AC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEEE2343-6198-48A0-AC92-818A5BFC4AC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEEE2343-6198-48A0-AC92-818A5BFC4AC4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{DED55323-AAA9-4A78-9907-7D02F66B1CCB} = {7CF89DE3-55A3-4C81-9A13-C5F6BE4C9669}
+		{AEEE2343-6198-48A0-AC92-818A5BFC4AC4} = {7CF89DE3-55A3-4C81-9A13-C5F6BE4C9669}
 	EndGlobalSection
 EndGlobal

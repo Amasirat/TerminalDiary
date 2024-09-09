@@ -4,11 +4,12 @@ namespace TerminalDiary;
 
 public class DiariesMenu : Menu
 {
-    public DiariesMenu(List<Diary> diaries, Menu src)
+    
+    public DiariesMenu(List<Diary> diaries)
     {
-        PopulateSelection();
-        DiaryList = diaries;
-        srcMenu = src;
+            PopulateSelection();
+            DiaryList = diaries;
+ 
     }
     // Used to fill selections field in a polymorphic fashion
     public override void PopulateSelection()
@@ -35,7 +36,6 @@ public class DiariesMenu : Menu
             }
             case 3:
             {
-                srcMenu.DisplaySelections();
                 break;
             }
             default:
@@ -50,7 +50,6 @@ public class DiariesMenu : Menu
             Console.WriteLine("No diaries have been found. Create a Diary?[Y/n]");
             if (Console.ReadLine() == "n")
             {
-                srcMenu.DisplaySelections();
                 return;
             }
         }
@@ -65,6 +64,5 @@ public class DiariesMenu : Menu
         if(diaryNum <= DiaryList.Count || diaryNum > 0)
             new EntryMenu(DiaryList[diaryNum - 1], this).DisplaySelections();
     }
-    private List<Diary> DiaryList { get; }
-    private Menu srcMenu;
+    private List<Diary>? DiaryList { get; }
 }

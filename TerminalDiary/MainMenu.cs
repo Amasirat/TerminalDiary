@@ -25,23 +25,28 @@ public class MainMenu : Menu
 
     public override void HandleUserInput(int input)
     {
-        switch (input)
-        {
-            case 1:
+        bool programEnded = false;
+        while(!programEnded)
+            switch (input)
             {
-                break;
+                case 1:
+                {
+                    break;
+                }
+                case 2:
+                {
+                    break;
+                }
+                case 3:
+                {
+                    programEnded = true;
+                    break;
+                }
+                default:
+                    Console.WriteLine("Invalid Input. Try Again.");
+                    break;
             }
-            case 2:
-            {
-                break;
-            }
-            case 3:
-            {
-                break;
-            }
-            default:
-                Console.WriteLine("Invalid Input. Try Again.");
-                break;
-        }
     }
+
+    private List<Menu> subMenus = new List<Menu>();
 }
